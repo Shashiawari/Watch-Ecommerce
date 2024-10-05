@@ -1,0 +1,18 @@
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    color: black;
+    
+}
+
+.cour{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:1000px) {
+    .cour img{
+        height: 70vh;
+        object-fit: cover;
+    }
+}

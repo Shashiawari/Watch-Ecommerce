@@ -1,0 +1,70 @@
+.offcanvas-body,
+.offcanvas-header {
+  background-color: black !important;
+}
+.navbar-brand {
+  font-family: log;
+  font-size: 60px;
+}
+
+.searchdiv {
+  position: relative;
+  width: 50%;
+}
+.searchdiv svg {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+}
+.searchdiv input {
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+  outline: none;
+}
+
+.searchdiv input::placeholder {
+  padding-left: 40px;
+
+  text-transform: uppercase;
+  font-family: reg;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  width: max-content;
+  padding: 15px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.heart,
+.loginsvg,
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-transform: capitalize;
+  font-family: reg;
+  gap: 5px;
+}
+
+@media (max-width: 1000px) {
+  .icons {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 1090px) {
+  .icons {
+    display: none;
+  }
+  .navbar-brand {
+    font-size: 30px;
+  }
+}

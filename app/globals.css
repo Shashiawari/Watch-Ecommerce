@@ -1,0 +1,18 @@
+@font-face {
+  font-family: reg ;
+  src: url(fonts/TT\ Chocolates\ Trial\ Regular.otf);
+}
+
+@font-face {
+  font-family: med ;
+  src: url(fonts/TT\ Chocolates\ Trial\ Medium.otf);
+}
+
+@font-face {
+  font-family: bol ;
+  src: url(fonts/TT\ Chocolates\ Trial\ DemiBold.otf);
+}
+@font-face {
+  font-family: log ;
+  src: url(fonts/Stalysta_personal\ use.ttf);
+}

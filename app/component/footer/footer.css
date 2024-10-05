@@ -1,0 +1,33 @@
+.footer{
+    width: 100%;
+
+    height: 100%;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.footer h1{
+    text-wrap: nowrap;
+    font-size: 30px;
+    color: black;
+    font-family: med;
+    text-transform: uppercase;
+}
+
+.footer a{
+    font-family: reg;
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    margin: 5px;
+}
+
+.footer .links:hover{
+    text-decoration: underline;
+}
+
+.footer h1:hover{
+    text-decoration: none !important;
+}
