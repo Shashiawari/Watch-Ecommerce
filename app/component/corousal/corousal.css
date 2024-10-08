@@ -1,18 +1,140 @@
-.carousel-control-next-icon,.carousel-control-prev-icon{
-    color: black;
-    
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  color: black;
 }
 
-.cour{
-    height: 80vh;
+.ctext {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f4f4f4;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.ctext a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: reg;
+  font-size: 15px;
+}
+.ctext a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+.ctext a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(255, 0, 0);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+.ctext a {
+  overflow: hidden;
+}
+
+.ctext a::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.ctext a:hover::after,
+.ctext a:focus::after {
+  transform: translate3d(0, 0, 0);
+}
+.ctext2 {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f4f4f4;
+  padding: 5px;
+  display: none;
+}
+
+.ctext2 a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: reg;
+  font-size: 10px;
+}
+.ctext2 a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+.ctext2 a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(255, 0, 0);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+.ctext2 a {
+  overflow: hidden;
+}
+
+.ctext2 a::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.ctext2 a:hover::after,
+.ctext2 a:focus::after {
+  transform: translate3d(0, 0, 0);
+}
+.cour {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#carouselExampleAutoplaying {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.small {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .cour{
+    height: 70vh;
+  }
+  .ctext {
+    display: none;
+  }
+  .ctext2 {
+    display: block;
+    top: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    padding: 5px;
+  }
 
-@media (max-width:1000px) {
-    .cour img{
-        height: 70vh;
-        object-fit: cover;
-    }
+  .small {
+    display: block;
+    padding: 40px;
+  }
+  .large {
+    display: none;
+  }
 }

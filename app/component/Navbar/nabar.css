@@ -1,12 +1,13 @@
 .offcanvas-body,
 .offcanvas-header {
-  background-color: black !important;
+  background-color: rgb(207, 205, 205) !important;
 }
 .navbar-brand {
   font-family: log;
   font-size: 60px;
+  margin: 0;
+  padding: 0;
 }
-
 .searchdiv {
   position: relative;
   width: 50%;
@@ -29,6 +30,51 @@
   font-family: reg;
 }
 
+.searchdiv2 {
+  position: relative;
+  width: 100% !important;
+  padding: 5px;
+}
+.searchdiv2 svg {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+}
+.searchdiv2 input {
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+  outline: none;
+}
+
+.searchdiv2 input::placeholder {
+  padding-left: 40px;
+
+  text-transform: uppercase;
+  font-family: reg;
+}
+
+.searchdiv2 {
+  display: none;
+  position: relative;
+  width: 50%;
+}
+.searchdiv2 svg {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+}
+.searchdiv2 input {
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+  outline: none;
+}
+
+.searchdiv2 input::placeholder {
+  padding-left: 40px;
+
+  text-transform: uppercase;
+  font-family: reg;
+}
 .icons {
   display: flex;
   flex-direction: row;
@@ -54,6 +100,21 @@
   gap: 5px;
 }
 
+
+.navbar-toggler-icon{
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.navbar-toggler{
+  border: none;
+  padding: 0;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
 @media (max-width: 1000px) {
   .icons {
     gap: 10px;
@@ -61,10 +122,15 @@
 }
 
 @media (max-width: 768px) and (max-width: 1090px) {
-  .icons {
-    display: none;
+.searchdiv{
+  display: none;
+}
+
+  .searchdiv2{
+    display: block;
   }
   .navbar-brand {
-    font-size: 30px;
+    font-size: 50px;
   }
+
 }
