@@ -115,11 +115,16 @@
     outline: none;
     box-shadow: none;
 }
+  .icons svg{
+    width:36px !important;
+    height:36px !important;
+  }
 @media (max-width: 1000px) {
   .icons {
     gap: 10px;
     padding: 0px;
   }
+
 }
 @media (max-width: 768px) and (max-width: 1090px) {
 .searchdiv{
