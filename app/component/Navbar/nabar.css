@@ -118,6 +118,7 @@
 @media (max-width: 1000px) {
   .icons {
     gap: 10px;
+    padding: 0px;
   }
 }
 
